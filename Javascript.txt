@@ -1,0 +1,43 @@
+
+```javascript
+// GESTION DE LA MODALE DES SERVICES (Vidéo + Formulaire)
+function openServiceModal(serviceTitle, videoUrl) {
+    const modal = document.getElementById('serviceModal');
+    const titleElement = document.getElementById('modalTitle');
+    
+    if (titleElement) {
+        titleElement.innerText = "Présentation : " + serviceTitle;
+    }
+    
+    if (modal) {
+        modal.style.display = 'flex';
+    }
+}
+
+function closeServiceModal() {
+    const modal = document.getElementById('serviceModal');
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// FERMETURE MODALE CLIC EXTÉRIEUR
+window.onclick = function(event) {
+    const modal = document.getElementById('serviceModal');
+    if (event.target === modal) {
+        closeServiceModal();
+    }
+};
+
+// FONCTION VISIONNER VIDÉO RAPPORT
+function openVideoModal(reportTitle) {
+    alert("Lecture de la vidéo : " + reportTitle + "\n(Le lecteur vidéo s'ouvrira ici).");
+}
+
+// SOUMISSION DU FORMULAIRE DE CONTACT
+function handleFormSubmit(event) {
+    event.preventDefault();
+    alert("Merci ! Votre demande a été enregistrée. L'équipe GRNB ADVISORY vous recontactera rapidement.");
+    closeServiceModal();
+}
+```

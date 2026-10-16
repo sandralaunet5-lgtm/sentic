@@ -1,0 +1,279 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRNB ADVISORY | Recherche Macroéconomique & Finance de Marché</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Style CSS principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#accueil" class="logo">
+                <span class="logo-title">GRNB ADVISORY</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#accueil" class="nav-link active">Accueil</a>
+                <a href="#recherche" class="nav-link">Recherche</a>
+                <a href="#marches" class="nav-link">Marchés</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">Accès Client</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION HERO -->
+    <section id="accueil" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">GRNB ADVISORY</h1>
+            <p class="hero-subtitle">Redéfinir la Performance par la Rigueur Macroéconomique</p>
+            <div class="hero-actions">
+                <a href="#recherche" class="btn btn-lg btn-light">Découvrir nos analyses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANDEAU DE DONNÉES MARCHÉS (TICKERS) -->
+    <section id="marches" class="ticker-section">
+        <div class="container">
+            <div class="ticker-grid">
+                <div class="ticker-card">
+                    <span class="ticker-name">CAC 40</span>
+                    <span class="ticker-value">7 350.23</span>
+                    <span class="ticker-change positive">+0.3%</span>
+                </div>
+                <div class="ticker-card">
+                    <span class="ticker-name">S&P 500</span>
+                    <span class="ticker-value">4 882.11</span>
+                    <span class="ticker-change negative">-0.1%</span>
+                </div>
+                <div class="ticker-card">
+                    <span class="ticker-name">EUR / USD</span>
+                    <span class="ticker-value">1.0915</span>
+                    <span class="ticker-change neutral">0.0%</span>
+                </div>
+                <div class="ticker-card">
+                    <span class="ticker-name">Taux US 10 ans</span>
+                    <span class="ticker-value">4.15%</span>
+                    <span class="ticker-change positive">+0.05</span>
+                </div>
+                <div class="ticker-card">
+                    <span class="ticker-name">Inflation Zone Euro</span>
+                    <span class="ticker-value">2.1%</span>
+                    <span class="ticker-change neutral">Stable</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION NOS SOLUTIONS (Présentation Institutionnelle) -->
+    <section id="solutions" class="solutions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Solutions Strategiques</h2>
+                <p>Une approche quantitative et rigoureuse au service des investisseurs institutionnels</p>
+            </div>
+
+            <!-- Espace réservé pour la description complète de l'entreprise -->
+            <div class="company-placeholder">
+                <p><em>[Note : La description institutionnelle détaillée et le profil de l'entreprise GRNB ADVISORY seront intégrés dans cet espace ultérieurement.]</em></p>
+            </div>
+
+            <div class="grid grid-3">
+                <!-- Solution 1 -->
+                <div class="card solution-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Recherche & Stratégie Global Macro</h3>
+                    <p>Analyse approfondie des régimes économiques, cycles de taux, liquidité mondiale et indicateurs avancés pour anticiper les dynamiques de marché.</p>
+                </div>
+                <!-- Solution 2 -->
+                <div class="card solution-card">
+                    <div class="card-icon">🏛️</div>
+                    <h3>Gestion Institutionnelle & Conseil</h3>
+                    <p>Accompagnement personnalisé pour les comités d'investissement, optimisation d'allocation d'actifs et cadrage macroéconomique sur mesure.</p>
+                </div>
+                <!-- Solution 3 -->
+                <div class="card solution-card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Ingénierie & Solutions Financières</h3>
+                    <p>Mise en place de matrices de scénarios d'exécution, filtres d'invalidation (3-3-3) et protocoles rigoureux de gestion des risques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION NOS SERVICES (Avec Vidéo & Formulaire de Contact) -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Services</h2>
+                <p>Découvrez le détail de nos offres et demandez une présentation personnalisée</p>
+            </div>
+
+            <div class="grid grid-3">
+                <!-- Service 1 -->
+                <div class="card service-card">
+                    <h3>Service de Recherche Macro</h3>
+                    <p>Abonnement aux rapports mensuels d'intelligence économique, cadrage d'exécution et suivi des indicateurs avancés.</p>
+                    <button class="btn btn-outline btn-discover" onclick="openServiceModal('Recherche Macroéconomique', 'https://www.youtube.com/embed/sample1')">Découvrir</button>
+                </div>
+                <!-- Service 2 -->
+                <div class="card service-card">
+                    <h3>Audit & Allocation Multi-Actifs</h3>
+                    <p>Évaluation stratégique de portefeuilles institutionnels et modélisation des risques de marché à court/moyen terme.</p>
+                    <button class="btn btn-outline btn-discover" onclick="openServiceModal('Audit & Allocation', 'https://www.youtube.com/embed/sample2')">Découvrir</button>
+                </div>
+                <!-- Service 3 -->
+                <div class="card service-card">
+                    <h3>Ateliers & Advisory Sur Mesure</h3>
+                    <p>Briefings exécutifs pour comités de direction et séminaires d'analyse quantitative appliqués à la finance de marché.</p>
+                    <button class="btn btn-outline btn-discover" onclick="openServiceModal('Advisory Sur Mesure', 'https://www.youtube.com/embed/sample3')">Découvrir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION RECHERCHE & ANALYSES (Pdfs et Vidéos) -->
+    <section id="recherche" class="research-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recherche & Publications</h2>
+                <p>Accédez à l'ensemble de nos rapports macroéconomiques en formats PDF et Vidéo</p>
+            </div>
+
+            <div class="grid grid-2">
+                <!-- Publications PDF -->
+                <div class="card research-card">
+                    <h3>📄 Rapports PDF Téléchargeables</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <div class="resource-info">
+                                <strong>Rapport Macro Intelligence Mondial</strong>
+                                <span>Cadrage mensuel & Matrice d'exécution 3-3-3</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline" onclick="alert('Le téléchargement du PDF sera bientôt disponible.'); return false;">Télécharger</a>
+                        </li>
+                        <li>
+                            <div class="resource-info">
+                                <strong>Note de Positionnement COT / OI</strong>
+                                <span>Analyse de la liquidité et des flux institutionnels</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline" onclick="alert('Le téléchargement du PDF sera bientôt disponible.'); return false;">Télécharger</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Publications Vidéo -->
+                <div class="card research-card">
+                    <h3>🎥 Analyses & Debriefings Vidéo</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <div class="resource-info">
+                                <strong>Débriefing Macroéconomique Mensuel</strong>
+                                <span>Analyse vidéo des perspectives de marché</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary" onclick="openVideoModal('Débriefing Macroéconomique Mensuel')">Visionner</button>
+                        </li>
+                        <li>
+                            <div class="resource-info">
+                                <strong>Revue Stratégique des Taux & Devise</strong>
+                                <span>Vidéo synthétique sur la politique monétaire</span>
+                            </div>
+                            <button class="btn btn-sm btn-primary" onclick="openVideoModal('Revue Stratégique Taux & Devise')">Visionner</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez GRNB ADVISORY</h2>
+                <p>Pour toute demande d'information, d'abonnement ou de rendez-vous institutionnel</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Coordonnées Institutionnelles</h3>
+                    <p><em>[Coordonnées temporaires - Prêtes à être modifiées]</em></p>
+                    <p><strong>Adresse :</strong> Abidjan, Côte d'Ivoire</p>
+                    <p><strong>Email :</strong> contact@grnb-advisory.com</p>
+                    <p><strong>Téléphone :</strong> +225 00 00 00 00 00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#recherche">Recherche</a>
+                <a href="#marches">Marchés</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-disclaimer">
+                <strong>Avertissement Légal :</strong> Les informations et analyses publiées par GRNB ADVISORY sont fournies exclusivement à but éducatif et d'information générale. Elles ne constituent en aucun cas un conseil en investissement ni une incitation à l'achat ou à la vente d'instruments financiers.
+            </p>
+            <p class="footer-copy">&copy; 2026 GRNB ADVISORY. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- MODALE SERVICE (Présentation Vidéo + Formulaire de Contact) -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeServiceModal()">&times;</span>
+            <h2 id="modalTitle">Présentation du Service</h2>
+            
+            <!-- Conteneur Vidéo -->
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <span>🎥 Vidéo de présentation du service (Lecteur vidéo à intégrer)</span>
+                </div>
+            </div>
+
+            <!-- Formulaire de contact associé -->
+            <form class="modal-form" onsubmit="handleFormSubmit(event)">
+                <h3>Demander un contact pour ce service</h3>
+                <div class="form-group">
+                    <label for="modal-name">Nom complet</label>
+                    <input type="text" id="modal-name" required placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="modal-email">Adresse Email</label>
+                    <input type="email" id="modal-email" required placeholder="nom@entreprise.com">
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Téléphone</label>
+                    <input type="tel" id="modal-phone" placeholder="+225 ...">
+                </div>
+                <div class="form-group">
+                    <label for="modal-message">Message / Précisions</label>
+                    <textarea id="modal-message" rows="3" placeholder="Précisez votre demande..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Envoyer la demande</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script JS principal -->
+    <script src="script.js"></script>
+</body>
+</html>
